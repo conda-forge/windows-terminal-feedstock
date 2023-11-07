@@ -1,5 +1,5 @@
 {% set name = "windows-terminal" %}
-{% set version = "1.17.11461" %}
+{% set version = "1.17.11461.0" %}
 
 
 package:
@@ -7,16 +7,16 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://github.com/microsoft/terminal/releases/download/v{{ version }}.0/Microsoft.WindowsTerminal_{{ version }}.0_x64.zip
+  - url: https://github.com/microsoft/terminal/releases/download/v{{ version }}/Microsoft.WindowsTerminal_{{ version }}_x64.zip
     sha256: f2b1539649d17752888d7944f97d6372f8d48eb1ceb024501df8d8e9d3352f25
-  - url: https://raw.githubusercontent.com/microsoft/terminal/v{{ version }}.0/LICENSE
+  - url: https://raw.githubusercontent.com/microsoft/terminal/v{{ version }}/LICENSE
     sha256: 5d177f23ecfeb0ea8e050b6a5a16355e1ae9a0b286436ca8f83ed08b3795be6b
-  - url: https://raw.githubusercontent.com/microsoft/terminal/v{{ version }}.0/NOTICE.md
+  - url: https://raw.githubusercontent.com/microsoft/terminal/v{{ version }}/NOTICE.md
     sha256: 47ef0f6f08c686f94e8acc62b8eee1964a5519f6ca839cb3abb4d74849a827e4
 
 build:
   skip: true  # [not win]
-  number: 0
+  number: 1
   missing_dso_whitelist:
     - "*"
   script: |
