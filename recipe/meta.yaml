@@ -1,5 +1,5 @@
 {% set name = "windows-terminal" %}
-{% set version = "1.23.13503.0" %}
+{% set version = "1.23.20211.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/microsoft/terminal/releases/download/v{{ version }}/Microsoft.WindowsTerminal_{{ version }}_x64.zip
-    sha256: 920b92d1cddc3a02fc6ba720b1f270cffae18eb114016c331835834917553c63
+    sha256: 83efe4572599479e9df38317a7be7feb1e2e86430432fc8d84f76df19de6cd11
   - url: https://raw.githubusercontent.com/microsoft/terminal/v{{ version }}/LICENSE
     sha256: 5d177f23ecfeb0ea8e050b6a5a16355e1ae9a0b286436ca8f83ed08b3795be6b
   - url: https://raw.githubusercontent.com/microsoft/terminal/v{{ version }}/NOTICE.md
