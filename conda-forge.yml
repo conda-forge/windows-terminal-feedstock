@@ -1,6 +1,7 @@
 bot:
   version_updates:
     sources: [githubreleases]
+  automerge: true
 github:
   branch_name: main
   tooling_branch_name: main
